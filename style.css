@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'LED';
+  src: url('./fonts/4a7d9dc16cce827cbe527efa5724fbab.woff2') format('woff2'),
+       url('./fonts/4a7d9dc16cce827cbe527efa5724fbab.woff') format('woff'),
+       url('./fonts/4a7d9dc16cce827cbe527efa5724fbab.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.body {
+  font-family: 'LED', sans-serif;
+  background-color: #000;
+  color: #0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.digital-clock{
+background-color: #000;
+font-family: 'LED', sans-serif;
+color:#fff;
+display:flex;
+border-radius:2rem;
+user-select:none;
+padding:0 2 rem;
+border: 0.5 rem solid #2d2d2d;
+}
+
+.week{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+width:3rem;
+color:#2d2d2d;
+font-weight: bold;
+}
+
+.week .active{
+  color:white;
+
+}
+
+.time{
+  font-family:'LED';
+}
+
+.hour,
+.min,
+.dot{
+  display:inline-block;
+  font-size:13rem;
+}
+
+.min{
+  display:math;
+}
+
+.invsible{
+visibility:hidden;
+}
